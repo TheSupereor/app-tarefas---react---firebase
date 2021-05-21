@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(27, 4, 49);
+}
+
+.boxTarefas{
+  width: 80%;
+  max-width: 800px;
+  background: white;
+  padding: 30px 50px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.boxTarefas h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tarefaSingle{
+  font-size: 15px;
+  padding: 8px 10px;
+  border-bottom: 2px dotted #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarefaSingle p{
+  cursor:pointer;
+}
+
+.tarefaSingle span{
+  cursor:pointer;
+}
+
+.addTarefa{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: rgb(0, 160, 253);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.titulo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo span{
+  font-size: 20px;
+  cursor:pointer;
+  color: red;
+}
+
+.modalContent{
+  max-width: 600px;
+  padding: 20px 20px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.modalContent h3{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#content-tarefa{
+  margin: 0 10px;
+  padding: 5px 5px 5px 0;
+}
+
+.modalContent button{
+  padding: 5px;
+  margin-top: 10px;
+}
